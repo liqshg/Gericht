@@ -274,6 +274,32 @@ main {
   border: none;
 }
 
+.book_container {
+  width: 100%;
+  margin: 0 auto;
+  width: 1364px;
+  height: 466px;
+  background-color: #0C0C0C;
+  border: 1px solid rgba(220, 202, 135, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 157px;
+  margin-bottom: 184px;
+  position: relative;
+}
+.book_container--abslt {
+  position: absolute;
+  top: -176px;
+  right: -127px;
+}
+.book_container--form {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .book_container--form--subtitle {
   font-family: Cormorant Upright;
   font-weight: 700;
@@ -281,4 +307,188 @@ main {
   line-height: 130%;
   letter-spacing: 4%;
   text-transform: capitalize;
+  text-align: center;
+  color: #FFFFFF;
+}
+.book_container--form--spoon {
+  margin: 8px 0;
+}
+.book_container--form--title {
+  font-family: Cormorant Upright;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 3%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #DCCA87;
+}
+.book_container--form--select {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  margin: 64px 0;
+}
+.book_container--form--select--person {
+  font-family: Cormorant Upright;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #AAAAAA;
+  background-color: transparent;
+  border: 1px solid #F5EFDB;
+  padding: 16px 298px 16px 16px;
+}
+.book_container--form--select--date {
+  font-family: Cormorant Upright;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #AAAAAA;
+  background-color: transparent;
+  border: 1px solid #F5EFDB;
+  padding: 16px 298px 16px 16px;
+}
+.book_container--form--select--time {
+  font-family: Cormorant Upright;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #AAAAAA;
+  background-color: transparent;
+  border: 1px solid #F5EFDB;
+  padding: 16px 298px 16px 16px;
+}
+.book_container--form--button {
+  font-family: Cormorant Upright;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 4%;
+  color: #0C0C0C;
+  background-color: #DCCA87;
+  padding: 8px 32px;
+}
+
+.info {
+  background-image: url("./img/stakan-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.info_box {
+  width: 100%;
+  max-width: 1630px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.info_box--abslt {
+  position: absolute;
+  top: 0px;
+}
+.info_box--link {
+  font-family: Cormorant Upright;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 3%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.info_box--link:hover {
+  font-family: Cormorant Upright;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 3%;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+}
+
+.menu {
+  padding: 152px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu_top {
+  width: 100%;
+  max-width: 407px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+.menu_top--sub {
+  font-family: Cormorant Upright;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 130%;
+  letter-spacing: 4%;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.menu_top--title {
+  font-family: Cormorant Upright;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #DCCA87;
+}
+.menu_container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+  align-items: center;
+}
+.menu_container_container {
+  width: 100%;
+  max-width: 412px;
+  display: flex;
+  flex-direction: column;
+}
+.menu_container_container--title {
+  font-family: Cormorant Upright;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+.menu_container_container--box {
+  width: 100%;
+  max-width: 412px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.menu_container_container--box--card {
+  width: 100%;
+  max-width: 412px;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
