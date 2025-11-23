@@ -539,6 +539,7 @@ main {
                 text-align: center;
                 text-transform: capitalize;
                 color: #FFFFFF;
+                margin-bottom: 48px;
             }
 
             &--box {
@@ -551,7 +552,274 @@ main {
                 &--card {
                     width: 100%;
                     max-width: 412px;
-                    display: flex;
+                    flex-direction: column;
+
+                    &--top {
+                        width: 100%;
+                        max-width: 412px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        &--title {
+                            font-family: Cormorant Upright;
+                            font-weight: 700;
+                            font-size: 23px;
+                            line-height: 130%;
+                            letter-spacing: 4%;
+                            text-transform: capitalize;
+                            color: #DCCA87;
+                        }
+
+                        &--line {
+                            width: 100%;
+                            max-width: 188px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+
+                        &--price {
+                            font-family: Cormorant Upright;
+                            font-weight: 700;
+                            font-size: 23px;
+                            line-height: 130%;
+                            letter-spacing: 4%;
+                            text-align: center;
+                            text-transform: capitalize;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    &--sub {
+                        font-family: Open Sans;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 175%;
+                        letter-spacing: 4%;
+                        text-align: center;
+                        color: #AAAAAA;
+                        text-align: left;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    &--button {
+        font-family: Cormorant Upright;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 175%;
+        letter-spacing: 4%;
+        color: #0C0C0C;
+        background-color: #DCCA87;
+        padding: 8px 32px;
+        width: 136px;
+    }
+}
+
+.chef {
+    background-image: url("./img/chef-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1045px;
+    display: flex;
+    align-items: center;
+
+    &_container {
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--box {
+            width: 100%;
+            max-width: 570px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+            align-items: flex-start;
+
+            &--top {
+                width: 100%;
+                max-width: 523px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                align-items: flex-start;
+
+                &--sub {
+                    font-family: Cormorant Upright;
+                    font-weight: 700;
+                    font-size: 23px;
+                    line-height: 130%;
+                    letter-spacing: 4%;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                }
+
+                &--title {
+                    font-family: Cormorant Upright;
+                    font-weight: 600;
+                    font-size: 64px;
+                    line-height: 130%;
+                    letter-spacing: 3%;
+                    text-transform: capitalize;
+                    color: #DCCA87;
+                }
+            }
+
+            &--text {
+                font-family: Open Sans;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 175%;
+                letter-spacing: 4%;
+                color: #AAAAAA;
+
+                & span {
+                    margin-right: 10px;
+                }
+            }
+
+            &--name {
+                width: 100%;
+                max-width: 135px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                &--title {
+                    font-family: Cormorant Upright;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 130%;
+                    letter-spacing: 4%;
+                    text-transform: capitalize;
+                    color: #DCCA87;
+                }
+
+                &--sub {
+                    font-family: Open Sans;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 4%;
+                    color: #AAAAAA;
+                }
+            }
+        }
+    }
+}
+
+.customers {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 152px 0;
+    position: relative;
+
+    &--absolute {
+        position: absolute;
+        right: -23px;
+        top: -47px;
+    }
+
+    &_top {
+        width: 100%;
+        max-width: 465px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+
+        &--sub {
+            font-family: Cormorant Upright;
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 130%;
+            letter-spacing: 4%;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+
+        &--title {
+            font-family: Cormorant Upright;
+            font-weight: 600;
+            font-size: 64px;
+            line-height: 130%;
+            letter-spacing: 3%;
+            text-transform: capitalize;
+            color: #DCCA87;
+        }
+    }
+
+    &_container {
+        width: 100%;
+        max-width: 1300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+        row-gap: 64px;
+        margin-top: 64px;
+
+        &--card {
+            width: 100%;
+            max-width: 634px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--img {
+                position: relative;
+
+                &--abslt {
+                    position: absolute;
+                    bottom: -20px;
+                    right: -16px;
+                }
+            }
+
+            &--text {
+                width: 100%;
+                max-width: 412px;
+                display: flex;
+                flex-direction: column;
+
+                &--text {
+                    font-family: Open Sans;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 4%;
+                    color: #AAAAAA;
+                    width: 400px;
+                    padding-bottom: 16px;
+                }
+
+                &--title {
+                    font-family: Cormorant Upright;
+                    font-weight: 400;
+                    font-size: 32px;
+                    line-height: 130%;
+                    letter-spacing: 4%;
+                    text-transform: capitalize;
+                    color: #DCCA87;
+                    padding-bottom: 4px;
+                }
+
+                &--sub {
+                    font-family: Open Sans;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 4%;
+                    color: #F5EFDB;
                 }
             }
         }
